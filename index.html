@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/fonts/PlusJakartaSans-VariableFont_wght.ttf">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="notifications">
+    <div class="container">
+      <div class="sec-head">
+        <div class="number">
+          <h2>Notifications</h2>
+          <span id="noti-number">3</span>
+        </div>
+        <button class="btn">Mark all as read</button>        
+      </div>
+      <ul class="notify">
+        <li class="read unread"> 
+          <img src="assets/images/avatar-mark-webber.webp" alt="">
+          <div class="text">
+            <p class="main">
+              <a href="#" class="name">Mark Webber</a>
+              reacted to your recent post
+              <span class="post">My first tournament today!</span></p>
+            <p class="time">1m ago</p>
+          </div>
+        </li>
+        <li class="read unread">
+          <img src="assets/images/avatar-angela-gray.webp" alt="">
+          <div class="text">
+            <p class="main">
+            <a href="#" class="name">Angela Gray</a> 
+            followed you
+            </p>
+            <p class="time">5m ago</p>
+          </div>
+        </li>
+        <li class="read unread">
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="">
+          <div class="text">
+            <p class="main">
+            <a href="#" class="name">Jacob Thompson</a>
+            has joined your group
+            <a href="#" class="link">Chess Club</a> 
+            </p>
+            <p class="time">1 day ago</p>
+          </div>
+        </li>
+        <li class="read">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="">
+          <div class="text">
+            <p class="main">
+            <a href="#" class="name">Rizky Hasanuddin</a>
+            sent you a private message
+            </p>
+            <p class="time">5 days ago</p>
+            <a href="#" class="message">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.
+            </a>
+          </div>
+        </li>
+        <li class="read">
+          
+            <img src="assets/images/avatar-kimberly-smith.webp" alt="">
+            <div class="box">
+              <div class="text">
+                <p class="main">
+                <a href="#" class="name">Kimberly Smith </a>
+                commented on your picture
+                </p>
+                <p class="time">1 week ago</p>
+              </div>            
+              <a href="#"><img src="assets/images/image-chess.webp" alt=""></a>     
+            </div>
+
+        </li>
+        <li class="read">
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="">
+          <div class="text">
+            <p class="main">
+            <a href="#" class="name">Nathan Peterson</a>
+            reacted to your recent post 
+            <span class="post"> 5 end-game strategies to increase your win rate</span>
+            </p>
+            <p class="time">2 weeks ago</p>
+        </div>
+        </li>
+        <li class="read">
+          <img src="assets/images/avatar-anna-kim.webp" alt="">
+          <div class="text">
+            <p class="main">
+            <a href="#" class="name">Anna Kim</a>
+            left the group 
+            <a href="#" class="link"> Chess Club</a> 
+            </p>
+            <p class="time">2 weeks ago</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Amany gouda</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

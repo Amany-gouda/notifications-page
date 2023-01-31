@@ -1,0 +1,163 @@
+:root{
+/* Primary */
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+
+/* Neutral */
+--White: hsl(0, 0%, 100%);
+--Very-light-grayish-blue: hsl(210, 60%, 98%);
+--Light-grayish-blue-1: hsl(211, 68%, 94%);
+--Light-grayish-blue-2: hsl(205, 33%, 90%);
+--Grayish-blue: hsl(219, 14%, 63%);
+--Dark-grayish-blue: hsl(219, 12%, 42%);
+--Very-dark-blue: hsl(224, 21%, 14%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+body{
+    font-family: "Plus Jakarta Sans";
+    background-color: var(--Very-light-grayish-blue);
+}
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+@media(min-width:768px){
+    .container{
+        width:300px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width:600px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width:800px;
+    }
+}
+.notifications{
+
+}
+.notifications .container{
+    box-shadow: 0 0 38px #ddd, 0 0 35px #eee;
+    background-color: white;
+    border-radius: .8rem; 
+}
+.notifications .container .sec-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.notifications .sec-head .number{
+    display: flex;
+    align-items: center;
+}
+.notifications .container .sec-head .number h2{
+    color: var(--Very-dark-blue);
+    margin-right: 0.8rem;
+}
+.notifications .container .sec-head .number span{
+    color: white;
+    background-color: var(--Blue);
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+.notifications .container .sec-head .btn{
+    border-style: none;
+    background-color: transparent;
+    color: var(--Grayish-blue);
+    cursor: pointer;
+}
+.notifications .container .sec-head .btn:hover{
+    color:var(--Blue)
+}
+/* style the notifications list  */
+.notifications .container .notify li.read{
+    display: flex;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+.notifications .container .notify li.unread{
+    background-color: var(--Very-light-grayish-blue);
+    border-radius: 5px;
+}
+
+.notifications .container .notify li img{
+    max-width: 100%;
+    width: 50px;
+    margin-right: 1rem;
+}
+.notifications .container .notify li .text{
+    color: var(--Grayish-blue);
+    /* position: relative; */
+}
+.notifications .container .notify li.unread .text .main::after{
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--Red);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 0.3rem;
+}
+.notifications .container .notify li .text .name{
+    color: var(--Very-dark-blue);
+    font-weight: 800;
+    margin-right: 0.5rem;
+}
+.notifications .container .notify li .text .name:hover{
+    color: var(--Blue);
+}
+.notifications .container .notify li .text .post{
+    color: var(--Dark-grayish-blue);
+    font-weight: 600;
+    cursor: pointer;
+}
+.notifications .container .notify li .text .post:hover{
+    color: var(--Blue);
+}
+.notifications .container .notify li .text .link{
+    color: var(--Dark-grayish-blue);
+    font-weight: 800;
+}
+.notifications .container .notify li .text .link:hover{
+    color: var(--Blue);
+}
+.notifications .container .notify li .text .message{
+    border: 1px solid var(--Light-grayish-blue-2);
+    border-radius: 5px;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    color: var(--Dark-grayish-blue);
+    display: inline-block;
+}
+.notifications .container .notify li .text .message:hover{
+    background-color: var(--Light-grayish-blue-2);
+}
+.notifications .container .notify li .box{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.notifications .container .notify li .box img{
+    margin-right: 0;
+}
